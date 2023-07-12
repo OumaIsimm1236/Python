@@ -1,0 +1,9 @@
+1 14.0 admis
+2 15.0 admis
+3 14.0 admis
+4 17.0 admis
+5 18.0 admis
+6 14.0 admis
+7 15.0 admis
+8 17.0 admis
+9 12.0 admis

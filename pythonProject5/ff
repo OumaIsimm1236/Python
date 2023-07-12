@@ -1,0 +1,61 @@
+ # Create a photoimage object of the image in the path
+        image1 = Image.open("C:/Users/lenovo/Downloads/logo.png")
+        test = ImageTk.PhotoImage(image1)
+
+        label1 = tk.Label(image=test)
+        label1.image = test
+
+        # Position image
+        label1.place(x=0, y=0, relwidth=1, relheight=1)
+
+
+
+
+        fenetre_resultat.mainloop()
+    else:
+        # Affichage d'un message d'erreur si l'identifiant ou le mot de passe est incorrect
+        messagebox.showerror("Erreur", "Identifiant ou mot de passe incorrect")
+
+
+# Création de la fenêtre de connexion
+fenetre_connexion = Tk()
+fenetre_connexion.title("Login")
+fenetre_connexion.geometry("400x300")
+# Create a photoimage object of the image in the path
+image1 = Image.open("C:/Users/lenovo/Downloads/logo.png")
+test = ImageTk.PhotoImage(image1)
+
+label1 = tk.Label(image=test)
+label1.image = test
+
+# Position image
+label1.place(x=0, y=0, relwidth=1, relheight=1)
+
+# Ajout des champs d'identifiant et de mot de passe
+
+identifiant_label = Label(fenetre_connexion, text="Identifiant")
+identifiant_entry = Entry(fenetre_connexion)
+mot_de_passe_label = Label(fenetre_connexion, text="Mot de passe")
+mot_de_passe_entry = Entry(fenetre_connexion, show="*")
+identifiant_label.pack()
+identifiant_entry.pack()
+mot_de_passe_label.pack()
+mot_de_passe_entry.pack()
+
+
+# Ajout d'un bouton de connexion
+bouton_login = Button(fenetre_connexion, text="Connexion", command=lambda: login(identifiant_entry, mot_de_passe_entry))
+bouton_login.pack()
+
+# Lancement de la boucle principale de la fenêtre de connexion
+fenetre_connexion.mainloop()
+
+
+
+
+
+
+if login("admin", "1234"):
+    fenetre_resultat
+else:
+    messagebox
